@@ -1,0 +1,27 @@
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess\ChessGame\obj\Debug\ChessGame.csprojAssemblyReference.cache
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess\ChessGame\obj\Debug\ChessGame.Properties.Resources.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess\ChessGame\obj\Debug\ChessGame.csproj.GenerateResource.cache
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess\ChessGame\bin\Debug\ChessGame.exe.config
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess\ChessGame\bin\Debug\ChessGame.exe
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess\ChessGame\bin\Debug\ChessGame.pdb
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess\ChessGame\obj\Debug\ChessGame.exe
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess\ChessGame\obj\Debug\ChessGame.pdb
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess\ChessGame\obj\Debug\ChessGame.Chess.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess тест 2\ChessGame\bin\Debug\ChessGame.exe.config
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess тест 2\ChessGame\bin\Debug\ChessGame.exe
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess тест 2\ChessGame\bin\Debug\ChessGame.pdb
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess тест 2\ChessGame\obj\Debug\ChessGame.csprojAssemblyReference.cache
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess тест 2\ChessGame\obj\Debug\ChessGame.Chess.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess тест 2\ChessGame\obj\Debug\ChessGame.Properties.Resources.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess тест 2\ChessGame\obj\Debug\ChessGame.csproj.GenerateResource.cache
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess тест 2\ChessGame\obj\Debug\ChessGame.exe
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess тест 2\ChessGame\obj\Debug\ChessGame.pdb
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\bin\Debug\ChessGame.exe.config
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\bin\Debug\ChessGame.exe
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\bin\Debug\ChessGame.pdb
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\obj\Debug\ChessGame.csprojAssemblyReference.cache
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\obj\Debug\ChessGame.Chess.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\obj\Debug\ChessGame.Properties.Resources.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\obj\Debug\ChessGame.csproj.GenerateResource.cache
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\obj\Debug\ChessGame.exe
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\obj\Debug\ChessGame.pdb
