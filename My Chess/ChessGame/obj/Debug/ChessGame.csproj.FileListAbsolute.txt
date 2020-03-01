@@ -25,3 +25,15 @@ C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGa
 C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\obj\Debug\ChessGame.csproj.GenerateResource.cache
 C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\obj\Debug\ChessGame.exe
 C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\Chess offline\ChessGame\obj\Debug\ChessGame.pdb
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\bin\Debug\ChessGame.exe.config
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\bin\Debug\ChessGame.exe
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\bin\Debug\ChessGame.pdb
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\obj\Debug\ChessGame.csprojAssemblyReference.cache
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\obj\Debug\ChessGame.Chess.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\obj\Debug\ChessGame.Connect.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\obj\Debug\ChessGame.Properties.Resources.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\obj\Debug\ChessGame.Start_form.resources
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\obj\Debug\ChessGame.csproj.GenerateResource.cache
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\obj\Debug\ChessGame.exe
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\obj\Debug\ChessGame.pdb
+C:\Users\Sasha\Desktop\Эл.Тех\Новый проект\My Chess\ChessGame\obj\Debug\ChessGame.Setting_form.resources

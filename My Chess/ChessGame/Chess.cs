@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using static ChessGame.Program;
 
 namespace ChessGame
 {   //сначала номер игрока, затем номер фигуры, 0 - пустая клетка 
     public partial class Chess : Form
     {
-        public Color W = Color.White;
-        public Color B = Color.CadetBlue;
+        public static Color W = Color.White;
+        public static Color B = Color.CadetBlue;
         public bool isMove = false;
         public Button prevButton;
         public Image chessSprites;
@@ -482,6 +483,8 @@ namespace ChessGame
             B = colorDialogC.Color;
             RedrawColorBoard();
         }
+
+ 
     }
 
 }

@@ -74,6 +74,7 @@
             this.Controls.Add(this.Restat);
             this.Name = "Chess";
             this.Text = "Chess";
+            this.UseWaitCursor = true;
             this.ResumeLayout(false);
 
         }
