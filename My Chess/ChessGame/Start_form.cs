@@ -31,7 +31,7 @@ namespace ChessGame
           
             Chess Chess = new Chess();
             
-            Chess.ShowDialog();
+           Chess.ShowDialog();
             Show();
            
         }
