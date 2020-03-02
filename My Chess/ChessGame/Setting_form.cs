@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChessGame;
-using static ChessGame.Chess;
+
 
 namespace ChessGame
 {
@@ -35,7 +35,14 @@ namespace ChessGame
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (folderBrowser.ShowDialog() == DialogResult.OK)
+            {
+                string path = folderBrowser.SelectedPath;
+                string folder = new System.IO.DirectoryInfo(path).Name;
 
+                Chess.skins = folder;
+
+            }
         }
     }
 }

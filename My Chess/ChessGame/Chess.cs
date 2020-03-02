@@ -1,27 +1,33 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using static ChessGame.Program;
+using System;
+using System.Net.Sockets;
+using System.Net;
 
 namespace ChessGame
-{   //сначала номер игрока, затем номер фигуры, 0 - пустая клетка 
+{   //offline сначала номер игрока, затем номер фигуры, 0 - пустая клетка 
     public partial class Chess : Form
     {
+        public static string path = @"..\..\img\";
+        public static string skins = "alpha";
         public static Color W = Color.White;
         public static Color B = Color.CadetBlue;
-        public bool isMove = false;
+        public bool isMoved = false;
         public Button prevButton;
         public Image chessSprites;
         public int[,] map;
         public Button[,] buttons = new Button[8, 8];
         public int currPlayer;
+
         public Chess()
         {
             InitializeComponent();
 
 
 
-            chessSprites = new Bitmap(@"..\..\img\Sprite.png");
+
+
 
 
             Init();
@@ -55,22 +61,88 @@ namespace ChessGame
                     buttons[i, j] = new Button();
 
                     Button button = new Button();
-                    button.Size = new Size(50, 50);
-                    button.Location = new Point(j * 50, i * 50);
+                    button.Size = new Size(80, 80);
+                    button.Location = new Point(j * 80, i * 80);
 
                     switch (map[i, j] / 10)
                     {
                         case 1:
-                            Image part = new Bitmap(50, 50);
-                            Graphics g = Graphics.FromImage(part);
-                            g.DrawImage(chessSprites, new Rectangle(0, 0, 50, 50), 0 + 150 * (map[i, j] % 10 - 1), 0, 150, 150, GraphicsUnit.Pixel);
-                            button.BackgroundImage = part;
+                            if (map[i, j] % 10 == 1)
+                            {
+                                Image part = new Bitmap(path + skins + "\\white_king.png");
+                                button.BackgroundImage = part;
+
+                            }
+                            if (map[i, j] % 10 == 2)
+                            {
+                                Image part = new Bitmap(path + skins + "\\white_queen.png");
+                                button.BackgroundImage = part;
+
+                            }
+                            if (map[i, j] % 10 == 3)
+                            {
+                                Image part = new Bitmap(path + skins + "\\white_bishop.png");
+                                button.BackgroundImage = part;
+
+                            }
+                            if (map[i, j] % 10 == 4)
+                            {
+                                Image part = new Bitmap(path + skins + "\\white_knight.png");
+                                button.BackgroundImage = part;
+
+                            }
+                            if (map[i, j] % 10 == 5)
+                            {
+                                Image part = new Bitmap(path + skins + "\\white_rock.png");
+                                button.BackgroundImage = part;
+
+                            }
+                            if (map[i, j] % 10 == 6)
+                            {
+                                Image part = new Bitmap(path + skins + "\\white_pawn.png");
+                                button.BackgroundImage = part;
+
+                            }
                             break;
+
+
                         case 2:
-                            Image partb = new Bitmap(50, 50);
-                            Graphics gb = Graphics.FromImage(partb);
-                            gb.DrawImage(chessSprites, new Rectangle(0, 0, 50, 50), 0 + 150 * (map[i, j] % 10 - 1), 150, 150, 150, GraphicsUnit.Pixel);
-                            button.BackgroundImage = partb;
+                            if (map[i, j] % 10 == 1)
+                            {
+                                Image partb = new Bitmap(path + skins + "\\black_king.png");
+                                button.BackgroundImage = partb;
+
+                            }
+                            if (map[i, j] % 10 == 2)
+                            {
+                                Image partb = new Bitmap(path + skins + "\\black_queen.png");
+                                button.BackgroundImage = partb;
+
+                            }
+                            if (map[i, j] % 10 == 3)
+                            {
+                                Image partb = new Bitmap(path + skins + "\\black_bishop.png");
+                                button.BackgroundImage = partb;
+
+                            }
+                            if (map[i, j] % 10 == 4)
+                            {
+                                Image partb = new Bitmap(path + skins + "\\black_knight.png");
+                                button.BackgroundImage = partb;
+
+                            }
+                            if (map[i, j] % 10 == 5)
+                            {
+                                Image partb = new Bitmap(path + skins + "\\black_rock.png");
+                                button.BackgroundImage = partb;
+
+                            }
+                            if (map[i, j] % 10 == 6)
+                            {
+                                Image partb = new Bitmap(path + skins + "\\black_pawn.png");
+                                button.BackgroundImage = partb;
+
+                            }
                             break;
                     }
                     if ((i + j) % 2 == 0)
@@ -97,40 +169,40 @@ namespace ChessGame
             if (prevButton != null)
                 RedrawColorBoard();
 
-            if (map[pressButton.Location.Y / 50, pressButton.Location.X / 50] != 0 && map[pressButton.Location.Y / 50, pressButton.Location.X / 50] / 10 == currPlayer)
+            if (map[pressButton.Location.Y / 80, pressButton.Location.X / 80] != 0 && map[pressButton.Location.Y / 80, pressButton.Location.X / 80] / 10 == currPlayer)
             {
                 RedrawColorBoard();
                 pressButton.BackColor = Color.Red;
                 DeactivateAllButtons();
                 pressButton.Enabled = true;
-                ShowSteps(pressButton.Location.Y / 50, pressButton.Location.X / 50, map[pressButton.Location.Y / 50, pressButton.Location.X / 50]);
+                ShowSteps(pressButton.Location.Y / 80, pressButton.Location.X / 80, map[pressButton.Location.Y / 80, pressButton.Location.X / 80]);
 
-                if (isMove)
+                if (isMoved)
                 {
                     RedrawColorBoard();
 
                     ActivateAllButtons();
-                    isMove = false;
+                    isMoved = false;
 
                 }
                 else
-                    isMove = true;
+                    isMoved = true;
 
             }
             else
             {
-                if (isMove)
+                if (isMoved)
                 {
 
-                    int temp = map[pressButton.Location.Y / 50, pressButton.Location.X / 50];
+                    int temp = map[pressButton.Location.Y / 80, pressButton.Location.X / 80];
                     if (temp == 21 || temp == 11)
                         Win();
-                    if (map[prevButton.Location.Y / 50, prevButton.Location.X / 50] % 10 == 6 && (pressButton.Location.Y / 50 == 7 || pressButton.Location.Y / 50 == 0))
-                        PawnUp(prevButton.Location.Y / 50, prevButton.Location.X / 50);
+                    if (map[prevButton.Location.Y / 80, prevButton.Location.X / 80] % 10 == 6 && (pressButton.Location.Y / 80 == 7 || pressButton.Location.Y / 80 == 0))
+                        PawnUp(prevButton.Location.Y / 80, prevButton.Location.X / 80);
 
-                    map[pressButton.Location.Y / 50, pressButton.Location.X / 50] = map[prevButton.Location.Y / 50, prevButton.Location.X / 50];
+                    map[pressButton.Location.Y / 80, pressButton.Location.X / 80] = map[prevButton.Location.Y / 80, prevButton.Location.X / 80];
 
-                    map[prevButton.Location.Y / 50, prevButton.Location.X / 50] = 0;
+                    map[prevButton.Location.Y / 80, prevButton.Location.X / 80] = 0;
 
                     pressButton.BackgroundImage = prevButton.BackgroundImage;
                     prevButton.BackgroundImage = null;
@@ -138,7 +210,7 @@ namespace ChessGame
                     ActivateAllButtons();
                     RedrawColorBoard();
                     SwichPlayer();
-                    isMove = false;
+                    isMoved = false;
 
                 }
             }
@@ -463,10 +535,13 @@ namespace ChessGame
 
         public void PawnUp(int Ifigure, int Jfigure)
         {
+            Image part;
             map[Ifigure, Jfigure] -= 4;
-            Image part = new Bitmap(50, 50);
-            Graphics g = Graphics.FromImage(part);
-            g.DrawImage(chessSprites, new Rectangle(0, 0, 50, 50), 150, 150 * (currPlayer - 1), 150, 150, GraphicsUnit.Pixel);
+            if (map[Ifigure, Jfigure] / 10 == 1)
+                part = new Bitmap(path + skins + "\\white_queen.png");
+            else
+                part = new Bitmap(path + skins + "\\black_queen.png");
+
             buttons[Ifigure, Jfigure].BackgroundImage = part;
         }
 
@@ -484,7 +559,8 @@ namespace ChessGame
             RedrawColorBoard();
         }
 
- 
+
+
     }
 
 }

@@ -28,7 +28,9 @@ namespace ChessGame
         private void Start(object sender, EventArgs e)
         {
             Hide();
+          
             Chess Chess = new Chess();
+            
             Chess.ShowDialog();
             Show();
            

@@ -36,39 +36,42 @@
             // 
             // Restat
             // 
-            this.Restat.Location = new System.Drawing.Point(405, 12);
+            this.Restat.Location = new System.Drawing.Point(650, 12);
             this.Restat.Name = "Restat";
-            this.Restat.Size = new System.Drawing.Size(75, 29);
+            this.Restat.Size = new System.Drawing.Size(78, 29);
             this.Restat.TabIndex = 0;
             this.Restat.Text = "Restart";
             this.Restat.UseVisualStyleBackColor = true;
+            this.Restat.UseWaitCursor = true;
             this.Restat.Click += new System.EventHandler(this.Restart);
             // 
             // WhiteCells
             // 
-            this.WhiteCells.Location = new System.Drawing.Point(405, 78);
+            this.WhiteCells.Location = new System.Drawing.Point(650, 58);
             this.WhiteCells.Name = "WhiteCells";
-            this.WhiteCells.Size = new System.Drawing.Size(75, 27);
+            this.WhiteCells.Size = new System.Drawing.Size(78, 27);
             this.WhiteCells.TabIndex = 1;
             this.WhiteCells.Text = "WhiteCells";
             this.WhiteCells.UseVisualStyleBackColor = true;
+            this.WhiteCells.UseWaitCursor = true;
             this.WhiteCells.Click += new System.EventHandler(this.White);
             // 
             // BlackCells
             // 
-            this.BlackCells.Location = new System.Drawing.Point(405, 121);
+            this.BlackCells.Location = new System.Drawing.Point(650, 103);
             this.BlackCells.Name = "BlackCells";
-            this.BlackCells.Size = new System.Drawing.Size(75, 29);
+            this.BlackCells.Size = new System.Drawing.Size(78, 29);
             this.BlackCells.TabIndex = 2;
             this.BlackCells.Text = "BlackCells";
             this.BlackCells.UseVisualStyleBackColor = true;
+            this.BlackCells.UseWaitCursor = true;
             this.BlackCells.Click += new System.EventHandler(this.Black);
             // 
             // Chess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 401);
+            this.ClientSize = new System.Drawing.Size(740, 661);
             this.Controls.Add(this.BlackCells);
             this.Controls.Add(this.WhiteCells);
             this.Controls.Add(this.Restat);
