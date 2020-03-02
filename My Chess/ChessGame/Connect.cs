@@ -21,10 +21,10 @@ namespace ChessGame
         private void create(object sender, EventArgs e)
         {
             
-            Chess ch = new Chess();
-            ch.Show();
-        //    ch.createServer(port);
-            // Chess ch = new Chess();
+            Chess ch = new Chess(port);
+            ch.ShowDialog();
+         
+            
             
             Close();
         }
@@ -32,10 +32,10 @@ namespace ChessGame
         private void Connection(object sender, EventArgs e)
         { 
             
-         //   Chess ch = new Chess(ip,port);
-        //    ch.ShowDialog();
-         //   ch.connectServer(ip, port);
-            // Chess ch = new Chess();
+            Chess ch = new Chess(ip,port);
+           ch.ShowDialog();
+            ch.connectServer(ip, port);
+             
             
             Close();
         }
